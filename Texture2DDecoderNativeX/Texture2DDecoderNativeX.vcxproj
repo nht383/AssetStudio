@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93613905-0e39-4be4-8c97-4130e790da21}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Texture2DDecoderNativeX</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Raspberry</TargetLinuxPlatform>
+    <LinuxProjectType>{8748239F-558C-44D1-944B-07B09C35B330}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetExt>.so</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="astc.h" />
+    <ClInclude Include="atc.h" />
+    <ClInclude Include="bcn.h" />
+    <ClInclude Include="bool32_t.h" />
+    <ClInclude Include="color.h" />
+    <ClInclude Include="crunch.h" />
+    <ClInclude Include="crunch\crnlib.h" />
+    <ClInclude Include="crunch\crn_decomp.h" />
+    <ClInclude Include="dllexport.h" />
+    <ClInclude Include="endianness.h" />
+    <ClInclude Include="etc.h" />
+    <ClInclude Include="fp16.h" />
+    <ClInclude Include="fp16\bitcasts.h" />
+    <ClInclude Include="fp16\fp16.h" />
+    <ClInclude Include="pvrtc.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="unitycrunch.h" />
+    <ClInclude Include="unitycrunch\crnlib.h" />
+    <ClInclude Include="unitycrunch\crn_decomp.h" />
+    <ClInclude Include="unitycrunch\crn_defs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="astc.cpp" />
+    <ClCompile Include="atc.cpp" />
+    <ClCompile Include="bcn.cpp" />
+    <ClCompile Include="crunch.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="etc.cpp" />
+    <ClCompile Include="pvrtc.cpp" />
+    <ClCompile Include="unitycrunch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <AdditionalOptions>-fpermissive %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="astc.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="atc.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="bcn.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="crunch.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="etc.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="pvrtc.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="unitycrunch.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="astc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="atc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="bcn.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fp16\bitcasts.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="bool32_t.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="crunch\crn_decomp.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="unitycrunch\crn_decomp.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="unitycrunch\crn_defs.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="unitycrunch\crnlib.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="crunch\crnlib.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="crunch.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="dllexport.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="endianness.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="etc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fp16.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fp16\fp16.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="pvrtc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="unitycrunch.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{5c6ef32b-2e55-40d9-af77-d5ef07f5ae41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{35666543-2052-451c-adfd-48a26d405c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{63a2d8e4-75d4-42f5-a74e-0b35bf212b68}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
